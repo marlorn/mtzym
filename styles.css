@@ -10,3 +10,8 @@ body {
   background-color: #222;
   color: #f6f6f6;
 }
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
