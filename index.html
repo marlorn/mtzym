@@ -11,14 +11,33 @@
     <script src="auto-mode.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
-      function copyText() {
+      function copyText1() {
         var text = "hJQYDkF4F634Bu5VhPhPyuTRmWJyhaRv";
         var input = document.createElement('input');
         input.setAttribute('value', text);
         document.body.appendChild(input);
         input.select();
         document.execCommand('copy');
-        document.body.removeChild(input);
+        document.body.removeChild(input);      
+
+      // 显示提示框
+      var alertBox = document.getElementById("alertBox");
+      alertBox.style.display = "block";
+      
+      // 1秒后隐藏提示框
+      setTimeout(function() {
+        alertBox.style.display = "none";
+      }, 1000);
+      }
+      function copyText2() {
+        var text = "sb-4f998f5b17aa55cd34f1e1b505d6f58cc79256cc0e67b5b0";
+        var input = document.createElement('input');
+        input.setAttribute('value', text);
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);      
+
       // 显示提示框
       var alertBox = document.getElementById("alertBox");
       alertBox.style.display = "block";
@@ -129,9 +148,12 @@
       <p><a href="https://chat.mtzym.cn/" target="_blank">ChatGPT NEXT（自己的，打开就能用）</a></p>
       <p>
         <a href="http://tdchatvip.us/" target="_blank">TDChat（先点按钮）</a>
-        <button id="copy-btn" onclick="copyText()">点我复制Key</button>
+        <button id="copy-btn" onclick="copyText1()">点我复制Key</button>
       </p>
-      <p><a href="https://www.askopenai.cn/" target="_blank">AskAI（直连，需要关注公众号）</a></p>
+      <p>
+        <a href="https://chat.openai-sb.com/" target="_blank">OpenAI-SB（先点按钮）</a>
+        <button id="copy-btn2" onclick="copyText2()">点我复制Key</button>
+      </p>
       <p><a href="http://www.chatpdf.com" target="_blank">ChatPDF（需要梯子）</a></p>
       <p><a href="https://chatbot.theb.ai/#/chat/1002" target="_blank">BAI Chat（需要梯子，免费）</a></p>
       <p><a href="http://bigjpg.com/" target="_blank">Bigjpg（AI人工智能图片放大）</a></p>
